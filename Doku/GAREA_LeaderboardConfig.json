@@ -1,0 +1,115 @@
+{
+    "playerDisplaySize": 40,
+    // Number of players displayed in the TopX List at the leaderboard - Maximum 100
+    
+    "dateTimeFormat": "%1.%2.%3 %4:%5:%6",
+    // Format for timestamps 
+    // %1 => day %2 => month %3 => year %4 => hour %5 => minute %6 => second
+    // DE
+    // day.month.year hour:minute:second
+    // %1.%2.%3 %4:%5:%6
+    // US
+    // month-day-year hour:minute:second
+    
+    "adminIds": [
+        "76561198009644592"
+    ],
+    // To show the admin button add steam id https://www.steamidfinder.com/ - comma seperated with new line /n for each admin
+    
+    "disableDeathBySuicide": 0,
+    "disableDeathByGrenade": 0,
+    "disableDeathByTrap": 0,
+    "disableDeathByZombie": 0,
+    "disableDeathByAnimal": 0,
+    "disableDeathByCar": 0,
+    "disableDeathByWeapon": 0,
+    "disableDeathByUnarmed": 0,
+    "disableDeathByUnknown": 0,
+    "disableKillOfGrenade": 0,
+    "disableKillOfTrap": 0,
+    "disableKillOfAnimal": 0,
+    "disableKillOfZombie": 0,
+    "disableKillOfCar": 0,
+    "disableKillOfWeapon": 0,
+    "disableKillOfUnarmed": 0,
+    "disableKillOfUnknown": 0,
+    // Disables counting death or kills
+    // When "disableKillOfAnimal" and "disableKillOfZombie" were set to 1 the pve button will not be showing, because it isn't relevant anymore...
+    
+    "disableKillOfUnconsciousSuicide": 0,
+    // When disableKillOfUnconsciousSuicide is set to 1, kills for a player where the target victim is unconscious and commits suicide will not be counted
+    
+    "includeAISurvivorFor": "both",
+    // Defines were AI Survivor kills will be counted to either on "both", "pvp", "pve" or "none" leaderboard
+    
+    "resetPlayerBeforeLoginFor": "both",
+    // Defines if a player will be reseted for either "both", "pvp", "pve" or "none" leaderboard before a login
+    
+    "resetPlayerAfterLogoutFor": "both",
+    // Defines if a player will be reseted for either "both", "pvp", "pve" or "none" leaderboard after a logout
+    
+    "showSurvivedTimeFor": "all",
+    // Defines if the survived time will be shown for "all" or only for "yourself" (current player) at the pvp and pve leaderboard    
+    
+    "showOnlyOnlinePlayersInTopXList": 0,
+    // Defines if only online players will be shown in the top X list
+    
+    "disablePVPLeaderboard": 0,
+    // Defines if the pvp leaderboard should be disabled 1 or not 0 (at 1 the pvp button disappears)
+    
+    "disablePVELeaderboard": 0,
+    // Defines if the pve leaderboard should be disabled 1 or not 0 (at 1 the pve button disappears)
+    
+    // Translations
+    "tTitle": "GAREA Leaderboard",
+    // Translation for leaderboard title
+    "thPlayerName": "Player",
+    // Translation for leaderboard header player
+    "thPlayerPos": "Pos",
+    // Translation for leaderboard header position
+    "thPlayerKills": "Kills",
+    // Translation for leaderboard header kills
+    "thPlayerDeaths": "Deaths",
+    // Translation for leaderboard header deaths
+    "thPlayerKD": "K/D",
+    // Translation for leaderboard header K/D
+    "thPlayerLongestDistance": "Longest Distance",
+    // Translation for leaderboard header longest distance
+    "thPlayerSurvivedTime": "Survived Time",
+    // Translation for leaderboard header survived time
+    "thPlayerKillsAISurvivor": "AI Survivors",
+    
+    "thPlayerKillsZombie": "Zombies",
+    "thPlayerKillsAnimal": "Animals",
+    "thBears": "Bears",
+    "thWolves": "Wolves",
+    "thWildBoars": "Wild boars",
+    "thRedDeers": "Red deers",
+    "thRoeDeers": "Roe deers",
+    "thSheeps": "Sheeps",
+    "thGoats": "Goats",
+    "thCows": "Cows",
+    "thPigs": "Pigs",
+    "thChicken": "Chicken",
+    // Translations for specific NPCs
+    
+    "thKillsNPCTotal": "Total",
+    // Translation for total NPC kills
+
+    "thPlayerPoints": "Points",
+    // Translation for Points (both PVP and PVE leaderboard)
+
+    "tShortMinute": "min",
+    // Translation abbreviation (short) for minutes, currently used for survived time
+
+    "tShortHour": "h",
+    // Translation abbreviation (short) for hours, currently used for survived time
+    
+    "updateTimestampPVP": "31.03.2023 13:57:51",
+    // Update timestamp for the pvp leaderboard, it will be updated when a kill or a death was counted for a player
+    // When a action (kill / death) was triggered a timestamp will be updated
+
+    "updateTimestampPVE": "31.03.2023 13:57:51"
+    // Update timestamp for the pve leaderboard, it will be updated when a kill or a death was counted for a AI survivor, zombie or a animal
+    // When a action (kill / death) was triggered a timestamp will be updated
+}

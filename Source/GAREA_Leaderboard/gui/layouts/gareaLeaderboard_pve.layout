@@ -1,0 +1,1062 @@
+FrameWidgetClass fMain {
+ clipchildren 1
+ ignorepointer 1
+ color 1 1 1 0.0157
+ position 0 0
+ size 1 1
+ halign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ scaled 1
+ {
+  FrameWidgetClass fPVE {
+   visible 1
+   clipchildren 1
+   ignorepointer 1
+   color 1 1 1 0.0157
+   size 0.7 0.7
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   scaled 1
+   {
+    TextListboxWidgetClass tlbESCExit {
+     visible 1
+     ignorepointer 1
+     position 0 0
+     size 1 1
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style NoScrollBar
+    }
+    PanelWidgetClass pTitlebar {
+     visible 1
+     clipchildren 1
+     ignorepointer 0
+     color 0 0 0 1
+     position 0 0
+     size 1 60
+     halign center_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     style rover_sim_colorable
+     "no focus" 0
+     {
+      TextWidgetClass tTitle {
+       clipchildren 0
+       ignorepointer 0
+       position 0.01 2
+       size 0.31 20
+       hexactpos 0
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       style Normal
+       text "GAREA Leaderboard"
+       font "gui/fonts/metron28"
+       "text valign" center
+      }
+      TextWidgetClass tPlayerOnlineCounter {
+       visible 1
+       clipchildren 0
+       ignorepointer 1
+       position 0.08 32
+       size 0.095 20
+       hexactpos 0
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       text "Online 0"
+       font "gui/fonts/metron22"
+       "text valign" center
+      }
+      TextWidgetClass tUpdateTimestamp {
+       visible 1
+       clipchildren 0
+       ignorepointer 1
+       position 0.205 32
+       size 0.19 20
+       hexactpos 0
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       text "Loading..."
+       font "gui/fonts/metron22"
+       "text valign" center
+      }
+      TextWidgetClass tPVE {
+       visible 1
+       clipchildren 0
+       ignorepointer 1
+       position 0.01 32
+       size 0.04 20
+       hexactpos 0
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       text "PVE"
+       font "gui/fonts/metron22"
+       "text valign" center
+      }
+      TextWidgetClass tTime {
+       visible 1
+       clipchildren 0
+       ignorepointer 1
+       position 0 32
+       size 0.05 20
+       halign center_ref
+       hexactpos 0
+       vexactpos 1
+       hexactsize 0
+       vexactsize 1
+       text "00:00"
+       font "gui/fonts/metron22"
+       "text halign" center
+       "text valign" center
+      }
+      PanelWidgetClass pAdminButtons {
+       visible 1
+       ignorepointer 1
+       position 108 0
+       size 132 40
+       halign right_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style blank
+       {
+        PanelWidgetClass pAdmin {
+         ignorepointer 1
+         position 0 0
+         size 1 1
+         halign right_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style Outline
+         {
+          ButtonWidgetClass bAdmin {
+           visible 1
+           clipchildren 0
+           inheritalpha 0
+           ignorepointer 0
+           position 0 0
+           size 1 1
+           halign right_ref
+           hexactpos 1
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Default
+           "no focus" 1
+           text "ADMIN"
+           font "gui/fonts/metron-bold"
+           switch normal
+          }
+         }
+        }
+       }
+      }
+      PanelWidgetClass pClose {
+       ignorepointer 1
+       position 0 0
+       size 40 40
+       halign right_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style Outline
+       {
+        ButtonWidgetClass bClose {
+         clipchildren 1
+         inheritalpha 0
+         ignorepointer 0
+         position 0 0
+         size 1 1
+         halign right_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style Default
+         "no focus" 1
+         text "X"
+         font "gui/fonts/metron-bold"
+         switch normal
+        }
+       }
+      }
+      PanelWidgetClass pPVP {
+       ignorepointer 1
+       position 40 0
+       size 68 40
+       halign right_ref
+       hexactpos 1
+       vexactpos 1
+       hexactsize 1
+       vexactsize 1
+       style Outline
+       {
+        ButtonWidgetClass bPVP {
+         clipchildren 1
+         inheritalpha 0
+         ignorepointer 0
+         position 0 0
+         size 1 1
+         halign right_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style Default
+         "no focus" 1
+         text "PVP"
+         font "gui/fonts/metron-bold"
+         switch normal
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass pTopX {
+     visible 1
+     clipchildren 1
+     ignorepointer 0
+     color 0 0 0 1
+     position 0 60
+     size 1 30
+     hexactpos 0
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     style rover_sim_colorable
+     "no focus" 0
+     {
+      TextWidgetClass tTopX {
+       clipchildren 0
+       ignorepointer 0
+       position 0 0
+       size 0.73 1
+       halign right_ref
+       valign center_ref
+       hexactpos 1
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style Normal
+       text "Top X"
+       font "gui/fonts/metron22"
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass pBody {
+     visible 1
+     disabled 0
+     clipchildren 1
+     ignorepointer 1
+     color 0.1961 0.1961 0.1961 1
+     position 0 0.01
+     size 1 0.87
+     halign center_ref
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     scaled 1
+     draggable 0
+     style rover_sim_colorable
+     {
+      PanelWidgetClass pTopXList {
+       visible 1
+       disabled 0
+       clipchildren 1
+       ignorepointer 1
+       color 0.1961 0.1961 0.1961 1
+       position 0.01 0
+       size 0.7 1
+       halign right_ref
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       scaled 1
+       draggable 0
+       style rover_sim_colorable
+       {
+        ScrollWidgetClass swBoard {
+         clipchildren 1
+         ignorepointer 0
+         keepsafezone 0
+         position 0 0
+         size 1 1
+         halign right_ref
+         valign bottom_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         scaled 1
+         style blank
+         "no focus" 0
+         "Scrollbar H" 1
+         {
+          GridSpacerWidgetClass gsBoard {
+           clipchildren 1
+           ignorepointer 0
+           keepsafezone 0
+           size 1 0
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           scaled 1
+           style Empty
+           Padding 0
+           Margin 0
+           "Size To Content H" 1
+           "Size To Content V" 1
+           Columns 100
+           Rows 1
+          }
+         }
+        }
+       }
+      }
+      PanelWidgetClass pPlayerEntry {
+       visible 1
+       disabled 0
+       clipchildren 1
+       ignorepointer 1
+       color 0.1961 0.1961 0.1961 1
+       size 0.27 1
+       hexactpos 0
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       scaled 1
+       draggable 0
+       style rover_sim_colorable
+       {
+        PanelWidgetClass pPlayerOnline {
+         ignorepointer 1
+         color 0 1 0 1
+         position 0 1
+         size 1 20
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         style rover_sim_colorable
+        }
+        PanelWidgetClass pPlayerPos {
+         ignorepointer 1
+         position 10 32
+         size 0.94 20
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         {
+          TextWidgetClass thPlayerPos {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0 0
+           size 0.56 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "Pos"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass tPlayerPos {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0.56 0
+           size 0.44 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+         }
+        }
+        PanelWidgetClass pPlayerName {
+         ignorepointer 1
+         position 10 62
+         size 0.94 20
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         {
+          TextWidgetClass thPlayerName {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0 0
+           size 0.56 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "Player"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass tPlayerName {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0.56 0
+           size 0.44 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+         }
+        }
+        PanelWidgetClass pPlayerDeaths {
+         ignorepointer 1
+         position 10 92
+         size 0.94 20
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         {
+          TextWidgetClass thPlayerDeaths {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0 0
+           size 0.56 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "Deaths"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass tPlayerDeaths {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0.56 0
+           size 0.44 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "0"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+         }
+        }
+        PanelWidgetClass pPlayerSurvivedTime {
+         ignorepointer 1
+         position 10 122
+         size 0.94 20
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         {
+          TextWidgetClass thPlayerSurvivedTime {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0 0
+           size 0.56 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "Survived Time"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass tPlayerSurvivedTime {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0.56 0
+           size 0.44 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+         }
+        }
+        PanelWidgetClass pStatsDivider {
+         ignorepointer 1
+         color 0.4353 0.4353 0.4353 1
+         position 0 152
+         size 1 2
+         hexactpos 0
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         style rover_sim_colorable
+        }
+        PanelWidgetClass pPlayerKillsAISurvivor {
+         ignorepointer 1
+         position 10 162
+         size 0.94 20
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         {
+          TextWidgetClass thPlayerKillsAISurvivor {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0 0
+           size 0.56 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "AI Survivors"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass tPlayerKillsAISurvivor {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0.56 0
+           size 0.44 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "0"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+         }
+        }
+        PanelWidgetClass pPlayerKillsZombie {
+         ignorepointer 1
+         position 10 192
+         size 0.94 20
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         {
+          TextWidgetClass thPlayerKillsZombie {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0 0
+           size 0.56 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "Zombies"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass tPlayerKillsZombie {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0.56 0
+           size 0.44 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "0"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+         }
+        }
+        PanelWidgetClass pPlayerKillsAnimals {
+         ignorepointer 1
+         position 10 232
+         size 0.94 320
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         {
+          TextWidgetClass thPlayerKillsBear {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0 0
+           size 0.56 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "Bears"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass thPlayerKillsWolf {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0 30
+           size 0.56 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "Wolves"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass thPlayerKillsWildBoar {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0 60
+           size 0.56 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "Wild boars"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass thPlayerKillsRedDeer {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0 90
+           size 0.56 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "Red deers"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass thPlayerKillsRoeDeer {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0 120
+           size 0.56 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "Roe deers"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass thPlayerKillsSheep {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0 150
+           size 0.56 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "Sheeps"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass thPlayerKillsGoat {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0 180
+           size 0.56 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "Goat"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass thPlayerKillsCow {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0 210
+           size 0.56 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "Cows"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass thPlayerKillsPig {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0 240
+           size 0.56 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "Pigs"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass thPlayerKillsChicken {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0 270
+           size 0.56 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "Chicken"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass thPlayerKillsAnimal {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0 300
+           size 0.56 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "Animals"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass tPlayerKillsBear {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0.56 0
+           size 0.44 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "0"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass tPlayerKillsWolf {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0.56 30
+           size 0.44 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "0"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass tPlayerKillsWildBoar {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0.56 60
+           size 0.44 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "0"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass tPlayerKillsRedDeer {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0.56 90
+           size 0.44 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "0"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass tPlayerKillsRoeDeer {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0.56 120
+           size 0.44 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "0"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass tPlayerKillsSheep {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0.56 150
+           size 0.44 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "0"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass tPlayerKillsGoat {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0.56 180
+           size 0.44 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "0"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass tPlayerKillsCow {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0.56 210
+           size 0.44 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "0"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass tPlayerKillsPig {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0.56 240
+           size 0.44 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "0"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass tPlayerKillsChicken {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0.56 270
+           size 0.44 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "0"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass tPlayerKillsAnimal {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0.56 300
+           size 0.44 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "0"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          PanelWidgetClass pAnimalDivider {
+           ignorepointer 1
+           color 0.4353 0.4353 0.4353 1
+           position 0 24
+           size 0.8 2
+           valign bottom_ref
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           style rover_sim_colorable
+          }
+         }
+        }
+        PanelWidgetClass pTotalDivider {
+         ignorepointer 1
+         color 0.4353 0.4353 0.4353 1
+         position 0 560
+         size 0.9 2
+         hexactpos 0
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         style rover_sim_colorable
+        }
+        PanelWidgetClass pPlayerKillsNPCTotal {
+         ignorepointer 1
+         position 10 570
+         size 0.94 20
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         {
+          TextWidgetClass thPlayerKillsNPCTotal {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0 0
+           size 0.56 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "Total"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass tPlayerKillsNPCTotal {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0.56 0
+           size 0.44 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "0"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+         }
+        }
+        PanelWidgetClass pPVEPointsDivider {
+         ignorepointer 1
+         color 0.4353 0.4353 0.4353 1
+         position 0 50
+         size 1 2
+         valign bottom_ref
+         hexactpos 0
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         style rover_sim_colorable
+        }
+        PanelWidgetClass pPlayerPVEPoints {
+         ignorepointer 1
+         position 10 20
+         size 0.94 20
+         valign bottom_ref
+         hexactpos 1
+         vexactpos 1
+         hexactsize 0
+         vexactsize 1
+         {
+          TextWidgetClass thPlayerPVEPoints {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0 0
+           size 0.56 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "Points"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+          TextWidgetClass tPlayerPVEPoints {
+           visible 1
+           clipchildren 0
+           ignorepointer 1
+           position 0.56 0
+           size 0.44 20
+           hexactpos 0
+           vexactpos 1
+           hexactsize 0
+           vexactsize 1
+           text "0"
+           font "gui/fonts/metron22"
+           "text valign" center
+          }
+         }
+        }
+       }
+      }
+      PanelWidgetClass pDividerL {
+       ignorepointer 1
+       color 0.4353 0.4353 0.4353 1
+       position 0.72 0
+       size 2 1
+       halign right_ref
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 1
+       hexactsize 1
+       vexactsize 0
+       style rover_sim_colorable
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<modded_inputs>
+    <inputs>
+        <actions>
+			<input name="UAOpenGAREALeaderboardPVP" loc="GL_open_pvp" />
+			<input name="UAOpenGAREALeaderboardPVE" loc="GL_open_pve" />
+        </actions>
+    </inputs>
+	<sorting name="gl" loc="GL_menu">
+		<input name="UAOpenGAREALeaderboardPVP"/>
+		<input name="UAOpenGAREALeaderboardPVE"/>
+	</sorting>
+    <preset>
+		<input name="UAOpenGAREALeaderboardPVP">
+            <btn name="kO"/>
+        </input>
+		<input name="UAOpenGAREALeaderboardPVE">
+            <btn name="kI"/>
+        </input>
+    </preset>
+</modded_inputs>

@@ -1,0 +1,183 @@
+FrameWidgetClass fGAREALeaderboardEntry {
+ visible 1
+ ignorepointer 1
+ position 0 0
+ size 1 40
+ halign center_ref
+ valign center_ref
+ hexactpos 1
+ vexactpos 1
+ hexactsize 0
+ vexactsize 1
+ priority 1
+ {
+  PanelWidgetClass pEntry {
+   visible 1
+   ignorepointer 1
+   color 0.1961 0.1961 0.1961 1
+   position 0 0
+   size 1 1
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style blank
+   {
+    PanelWidgetClass pBackground {
+     visible 1
+     ignorepointer 1
+     color 1 1 1 0
+     size 1 1
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style rover_sim_colorable
+    }
+    PanelWidgetClass pPlayerOnline {
+     visible 1
+     ignorepointer 1
+     color 1 0 0 1
+     position 0 0
+     size 10 1
+     valign center_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 1
+     vexactsize 0
+     style rover_sim_colorable
+    }
+    TextWidgetClass tPlayerPos {
+     visible 1
+     ignorepointer 1
+     position 0.01 0
+     size 0.06 38
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     font "gui/fonts/metron22"
+     "size to text h" 0
+     "size to text v" 0
+     "text halign" center
+     "text valign" center
+    }
+    TextWidgetClass tPlayerSurvivedTime {
+     visible 1
+     ignorepointer 1
+     position 0.35 0
+     size 0.15 38
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     font "gui/fonts/metron22"
+     "text color" 0.7412 0.7412 0.7412 1
+     "text valign" center
+    }
+    TextWidgetClass tPlayerName {
+     visible 1
+     ignorepointer 1
+     position 0.07 0
+     size 0.28 38
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     font "gui/fonts/metron22"
+     "text color" 0.7412 0.7412 0.7412 1
+     "text valign" center
+    }
+    TextWidgetClass tPlayerLongestDistance {
+     visible 1
+     ignorepointer 1
+     position 0.5 0
+     size 0.18 38
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 1
+     font "gui/fonts/metron22"
+     "text valign" center
+    }
+    TextWidgetClass tPlayerKills {
+     visible 1
+     ignorepointer 1
+     position 0.68 0
+     size 0.08 38
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     font "gui/fonts/metron22"
+     "text halign" right
+     "text valign" center
+    }
+    TextWidgetClass tPlayerDeaths {
+     visible 1
+     ignorepointer 1
+     position 0.76 0
+     size 0.08 38
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     font "gui/fonts/metron22"
+     "text halign" right
+     "text valign" center
+    }
+    TextWidgetClass tPlayerKD {
+     visible 1
+     ignorepointer 1
+     position 0.84 0
+     size 0.06 38
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     font "gui/fonts/metron22"
+     "text halign" right
+     "text valign" center
+    }
+    TextWidgetClass tPlayerPVPPoints {
+     visible 1
+     ignorepointer 1
+     position 0.9 0
+     size 0.09 38
+     valign bottom_ref
+     hexactpos 0
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     font "gui/fonts/metron22"
+     "text halign" right
+     "text valign" center
+    }
+    PanelWidgetClass pOutlineBottom {
+     visible 1
+     ignorepointer 1
+     color 0.4353 0.4353 0.4353 1
+     position 0 0
+     size 1 2
+     halign center_ref
+     valign bottom_ref
+     hexactpos 1
+     vexactpos 1
+     hexactsize 0
+     vexactsize 1
+     style rover_sim_colorable
+     "no focus" 0
+    }
+   }
+  }
+ }
+}

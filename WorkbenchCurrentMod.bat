@@ -1,0 +1,2 @@
+@echo off
+start /D "D:\Programme\Steam\steamapps\common\DayZ Tools\Bin\Workbench" workbenchApp.exe "-mod=P:\JM\CF\Scripts;P:\GAREA_Leaderboard;P:\CrimsonZamboniDeathmatch;P:\GAREA_Leaderboard_P_CZD;P:\GAREA_LoadingScreen;P:\GAREA_DPM"

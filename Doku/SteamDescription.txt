@@ -1,0 +1,22 @@
+[h1]GAREA Leadboard - Built for everyone![/h1]
+
+[hr][/hr]A lightweight leaderboard that supports both PVP and PVE
+
+Completely free for the Day-Z Community ♥
+Does not require any cloud service
+(Directly processed by the Day-Z server)
+
+[h2][b]Learn more about this mod under[/b][/h2]
+[url]https://www.yourgamearea.de/mods/dayz-garea_leaderboard[/url]
+
+[hr][/hr]
+[h2][b]Plugins (server)[/b][/h2]
+[list]
+[*]GAREA_Leaderboard_P_CZD for CrimsonZamboniDeathmatch
+[url]https://steamcommunity.com/sharedfiles/filedetails/?id=2858261725[/url]
+[/list]
+
+[hr][/hr][h2][b]Repacking[/b][h2]
+is allowed with one exception
+=> Monetization, one buy option or anything else to gain money of a repacked version of this mod is forbidden and will be punished! (This mod must be free for every one)
+[hr][/hr]
